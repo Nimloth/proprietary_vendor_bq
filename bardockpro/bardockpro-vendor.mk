@@ -63,6 +63,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
     vendor/bq/bardockpro/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
     vendor/bq/bardockpro/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/bq/bardockpro/proprietary/etc/permissions/qti-vzw-ims-internal.xml:system/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/bq/bardockpro/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
     vendor/bq/bardockpro/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/bq/bardockpro/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
@@ -79,6 +80,11 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/bq/bardockpro/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/bq/bardockpro/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/bq/bardockpro/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
+    vendor/bq/bardockpro/proprietary/lib/lib-imscamera.so:system/lib/lib-imscamera.so \
+    vendor/bq/bardockpro/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
+    vendor/bq/bardockpro/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
+    vendor/bq/bardockpro/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
     vendor/bq/bardockpro/proprietary/lib/libGPTEE_system.so:system/lib/libGPTEE_system.so \
     vendor/bq/bardockpro/proprietary/lib/libQTEEConnector_system.so:system/lib/libQTEEConnector_system.so \
     vendor/bq/bardockpro/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
@@ -91,6 +97,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/lib/libdpmnsrm.so:system/lib/libdpmnsrm.so \
     vendor/bq/bardockpro/proprietary/lib/libdpmtcm.so:system/lib/libdpmtcm.so \
     vendor/bq/bardockpro/proprietary/lib/libdualcameraddm.so:system/lib/libdualcameraddm.so \
+    vendor/bq/bardockpro/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
+    vendor/bq/bardockpro/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
     vendor/bq/bardockpro/proprietary/lib/libjni_dualcamera.so:system/lib/libjni_dualcamera.so \
     vendor/bq/bardockpro/proprietary/lib/libjni_filtergenerator.so:system/lib/libjni_filtergenerator.so \
     vendor/bq/bardockpro/proprietary/lib/libjni_hazebuster.so:system/lib/libjni_hazebuster.so \
@@ -103,6 +111,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/lib/libjni_ubifocus.so:system/lib/libjni_ubifocus.so \
     vendor/bq/bardockpro/proprietary/lib/liblocationservice_jni.so:system/lib/liblocationservice_jni.so \
     vendor/bq/bardockpro/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
+    vendor/bq/bardockpro/proprietary/lib/librcc.so:system/lib/librcc.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libsdm-disp-apis.so:system/vendor/lib/libsdm-disp-apis.so \
     vendor/bq/bardockpro/proprietary/lib/libstagefright_soft_flacdec.so:system/lib/libstagefright_soft_flacdec.so \
@@ -118,8 +127,14 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/lib/vendor.qti.hardware.qteeconnector@1.0.so:system/lib/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/bq/bardockpro/proprietary/lib/vendor.qti.hardware.tui_comm@1.0.so:system/lib/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/bq/bardockpro/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/bq/bardockpro/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/bq/bardockpro/proprietary/lib64/hw/csfingerprint.default.so:system/lib64/hw/csfingerprint.default.so \
     vendor/bq/bardockpro/proprietary/lib64/hw/swfingerprint.default.so:system/lib64/hw/swfingerprint.default.so \
+    vendor/bq/bardockpro/proprietary/lib64/lib-imscamera.so:system/lib64/lib-imscamera.so \
+    vendor/bq/bardockpro/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
+    vendor/bq/bardockpro/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
+    vendor/bq/bardockpro/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
+    vendor/bq/bardockpro/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
     vendor/bq/bardockpro/proprietary/lib64/libGPTEE_system.so:system/lib64/libGPTEE_system.so \
     vendor/bq/bardockpro/proprietary/lib64/libQTEEConnector_system.so:system/lib64/libQTEEConnector_system.so \
     vendor/bq/bardockpro/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
@@ -132,6 +147,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/lib64/libgf_ca.so:system/lib64/libgf_ca.so \
     vendor/bq/bardockpro/proprietary/lib64/libgf_hal.so:system/lib64/libgf_hal.so \
     vendor/bq/bardockpro/proprietary/lib64/libgoodixfingerprintd_binder.so:system/lib64/libgoodixfingerprintd_binder.so \
+    vendor/bq/bardockpro/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
+    vendor/bq/bardockpro/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/bq/bardockpro/proprietary/lib64/libjni_clearsight.so:system/lib64/libjni_clearsight.so \
     vendor/bq/bardockpro/proprietary/lib64/libjni_dualcamera.so:system/lib64/libjni_dualcamera.so \
     vendor/bq/bardockpro/proprietary/lib64/libjni_filtergenerator.so:system/lib64/libjni_filtergenerator.so \
@@ -144,8 +161,10 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/lib64/libjni_truescanner_v2.so:system/lib64/libjni_truescanner_v2.so \
     vendor/bq/bardockpro/proprietary/lib64/libjni_ubifocus.so:system/lib64/libjni_ubifocus.so \
     vendor/bq/bardockpro/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
+    vendor/bq/bardockpro/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libsd_sdk_display.so:system/vendor/lib64/libsd_sdk_display.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libsdm-disp-apis.so:system/vendor/lib64/libsdm-disp-apis.so \
+    vendor/bq/bardockpro/proprietary/lib64/libtrueportrait.so:system/lib64/libtrueportrait.so \
     vendor/bq/bardockpro/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
     vendor/bq/bardockpro/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
     vendor/bq/bardockpro/proprietary/lib64/vendor.nxp.nxpnfc@1.0.so:system/lib64/vendor.nxp.nxpnfc@1.0.so \
@@ -168,13 +187,14 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/bin/garden_app:system/vendor/bin/garden_app \
     vendor/bq/bardockpro/proprietary/vendor/bin/hci_qcomm_init:system/vendor/bin/hci_qcomm_init \
     vendor/bq/bardockpro/proprietary/vendor/bin/hvdcp_opti:system/vendor/bin/hvdcp_opti \
-    vendor/bq/bardockpro/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-bardockpro:system/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-bardockpro \
+    vendor/bq/bardockpro/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:system/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service \
     vendor/bq/bardockpro/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:system/vendor/bin/hw/vendor.display.color@1.0-service \
     vendor/bq/bardockpro/proprietary/vendor/bin/hw/vendor.qti.gnss@1.0-service:system/vendor/bin/hw/vendor.qti.gnss@1.0-service \
     vendor/bq/bardockpro/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@1.0-service:system/vendor/bin/hw/vendor.qti.hardware.perf@1.0-service \
     vendor/bq/bardockpro/proprietary/vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti:system/vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti \
     vendor/bq/bardockpro/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:system/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
     vendor/bq/bardockpro/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:system/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
+    vendor/bq/bardockpro/proprietary/vendor/bin/imsrcsd:system/vendor/bin/imsrcsd \
     vendor/bq/bardockpro/proprietary/vendor/bin/ipacm-diag:system/vendor/bin/ipacm-diag \
     vendor/bq/bardockpro/proprietary/vendor/bin/irsc_util:system/vendor/bin/irsc_util \
     vendor/bq/bardockpro/proprietary/vendor/bin/loc_launcher:system/vendor/bin/loc_launcher \
@@ -208,12 +228,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb:system/vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb \
     vendor/bq/bardockpro/proprietary/vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb:system/vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb \
     vendor/bq/bardockpro/proprietary/vendor/etc/camera/camera_config.xml:system/vendor/etc/camera/camera_config.xml \
-    vendor/bq/bardockpro/proprietary/vendor/etc/camera/csidtg_camera.xml:system/vendor/etc/camera/csidtg_camera.xml \
-    vendor/bq/bardockpro/proprietary/vendor/etc/camera/csidtg_chromatix.xml:system/vendor/etc/camera/csidtg_chromatix.xml \
     vendor/bq/bardockpro/proprietary/vendor/etc/camera/imx298_chromatix.xml:system/vendor/etc/camera/imx298_chromatix.xml \
     vendor/bq/bardockpro/proprietary/vendor/etc/camera/imx298_gt24c64_chromatix.xml:system/vendor/etc/camera/imx298_gt24c64_chromatix.xml \
-    vendor/bq/bardockpro/proprietary/vendor/etc/camera/imx362_chromatix.xml:system/vendor/etc/camera/imx362_chromatix.xml \
-    vendor/bq/bardockpro/proprietary/vendor/etc/camera/imx362_chromatix_bear.xml:system/vendor/etc/camera/imx362_chromatix_bear.xml \
     vendor/bq/bardockpro/proprietary/vendor/etc/camera/s5k2l7_8953_chromatix.xml:system/vendor/etc/camera/s5k2l7_8953_chromatix.xml \
     vendor/bq/bardockpro/proprietary/vendor/etc/camera/s5k2l7_chromatix.xml:system/vendor/etc/camera/s5k2l7_chromatix.xml \
     vendor/bq/bardockpro/proprietary/vendor/etc/camera/s5k4h8_OFF0380_chromatix.xml:system/vendor/etc/camera/s5k4h8_OFF0380_chromatix.xml \
@@ -236,7 +252,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/etc/drc/drc_cfg_AZ.txt:system/vendor/etc/drc/drc_cfg_AZ.txt \
     vendor/bq/bardockpro/proprietary/vendor/etc/flp.conf:system/vendor/etc/flp.conf \
     vendor/bq/bardockpro/proprietary/vendor/etc/gps.conf:system/vendor/etc/gps.conf \
-    vendor/bq/bardockpro/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.bardockpro.rc:system/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.bardockpro.rc \
+    vendor/bq/bardockpro/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:system/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/bq/bardockpro/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:system/vendor/etc/init/vendor.display.color@1.0-service.rc \
     vendor/bq/bardockpro/proprietary/vendor/etc/init/vendor.qti.gnss@1.0-service.rc:system/vendor/etc/init/vendor.qti.gnss@1.0-service.rc \
     vendor/bq/bardockpro/proprietary/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc:system/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc \
@@ -275,6 +291,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/firmware/cpp_firmware_v1_6_0.fw:system/vendor/firmware/cpp_firmware_v1_6_0.fw \
     vendor/bq/bardockpro/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:system/vendor/firmware/cpp_firmware_v1_8_0.fw \
     vendor/bq/bardockpro/proprietary/vendor/firmware/libpn548ad_fw.so:system/vendor/firmware/libpn548ad_fw.so \
+    vendor/bq/bardockpro/proprietary/vendor/framework/qti-vzw-ims-internal.jar:system/vendor/framework/qti-vzw-ims-internal.jar \
     vendor/bq/bardockpro/proprietary/vendor/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
@@ -292,6 +309,9 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/lib/hw/vendor.qti.gnss@1.0-impl.so:system/vendor/lib/hw/vendor.qti.gnss@1.0-impl.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/hw/vulkan.msm8953.so:system/vendor/lib/hw/vulkan.msm8953.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib/lib-imscmservice.so:system/vendor/lib/lib-imscmservice.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib/lib-imsxml.so:system/vendor/lib/lib-imsxml.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib/lib-uceservice.so:system/vendor/lib/lib-uceservice.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libAlacSwDec.so:system/vendor/lib/libAlacSwDec.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libApeSwDec.so:system/vendor/lib/libApeSwDec.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
@@ -346,11 +366,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/lib/libc2d30-a5xx.so:system/vendor/lib/libc2d30-a5xx.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libc2d30_bltlib.so:system/vendor/lib/libc2d30_bltlib.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libchromaflash.so:system/vendor/lib/libchromaflash.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_csidtg_common.so:system/vendor/lib/libchromatix_csidtg_common.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_csidtg_cpp_preview.so:system/vendor/lib/libchromatix_csidtg_cpp_preview.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_csidtg_postproc.so:system/vendor/lib/libchromatix_csidtg_postproc.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_csidtg_preview.so:system/vendor/lib/libchromatix_csidtg_preview.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_csidtg_zsl_preview.so:system/vendor/lib/libchromatix_csidtg_zsl_preview.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx298_4K_preview.so:system/vendor/lib/libchromatix_imx298_4K_preview.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx298_4K_video.so:system/vendor/lib/libchromatix_imx298_4K_video.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx298_common.so:system/vendor/lib/libchromatix_imx298_common.so \
@@ -412,76 +427,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx298_video_hdr.so:system/vendor/lib/libchromatix_imx298_video_hdr.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx298_zsl_preview.so:system/vendor/lib/libchromatix_imx298_zsl_preview.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx298_zsl_video.so:system/vendor/lib/libchromatix_imx298_zsl_video.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_1080p_preview_3a.so:system/vendor/lib/libchromatix_imx362_1080p_preview_3a.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_1080p_preview_3a_bear.so:system/vendor/lib/libchromatix_imx362_1080p_preview_3a_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_1080p_video_3a.so:system/vendor/lib/libchromatix_imx362_1080p_video_3a.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_1080p_video_3a_bear.so:system/vendor/lib/libchromatix_imx362_1080p_video_3a_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_4k_preview_3a.so:system/vendor/lib/libchromatix_imx362_4k_preview_3a.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_4k_preview_3a_bear.so:system/vendor/lib/libchromatix_imx362_4k_preview_3a_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_4k_video_3a.so:system/vendor/lib/libchromatix_imx362_4k_video_3a.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_4k_video_3a_bear.so:system/vendor/lib/libchromatix_imx362_4k_video_3a_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_common.so:system/vendor/lib/libchromatix_imx362_common.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_common_bear.so:system/vendor/lib/libchromatix_imx362_common_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_hfr_120.so:system/vendor/lib/libchromatix_imx362_cpp_hfr_120.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_hfr_120_bear.so:system/vendor/lib/libchromatix_imx362_cpp_hfr_120_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_hfr_240.so:system/vendor/lib/libchromatix_imx362_cpp_hfr_240.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_hfr_240_bear.so:system/vendor/lib/libchromatix_imx362_cpp_hfr_240_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_hfr_60.so:system/vendor/lib/libchromatix_imx362_cpp_hfr_60.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_hfr_60_bear.so:system/vendor/lib/libchromatix_imx362_cpp_hfr_60_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_liveshot.so:system/vendor/lib/libchromatix_imx362_cpp_liveshot.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_liveshot_bear.so:system/vendor/lib/libchromatix_imx362_cpp_liveshot_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_preview.so:system/vendor/lib/libchromatix_imx362_cpp_preview.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_preview_bear.so:system/vendor/lib/libchromatix_imx362_cpp_preview_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_snapshot.so:system/vendor/lib/libchromatix_imx362_cpp_snapshot.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_snapshot_bear.so:system/vendor/lib/libchromatix_imx362_cpp_snapshot_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_snapshot_downscale_bear.so:system/vendor/lib/libchromatix_imx362_cpp_snapshot_downscale_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_snapshot_hdr.so:system/vendor/lib/libchromatix_imx362_cpp_snapshot_hdr.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_snapshot_hdr_bear.so:system/vendor/lib/libchromatix_imx362_cpp_snapshot_hdr_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_snapshot_upscale_bear.so:system/vendor/lib/libchromatix_imx362_cpp_snapshot_upscale_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_video.so:system/vendor/lib/libchromatix_imx362_cpp_video.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_video_4k.so:system/vendor/lib/libchromatix_imx362_cpp_video_4k.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_video_4k_bear.so:system/vendor/lib/libchromatix_imx362_cpp_video_4k_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_video_bear.so:system/vendor/lib/libchromatix_imx362_cpp_video_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_video_hdr.so:system/vendor/lib/libchromatix_imx362_cpp_video_hdr.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_cpp_video_hdr_bear.so:system/vendor/lib/libchromatix_imx362_cpp_video_hdr_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_default_preview_3a.so:system/vendor/lib/libchromatix_imx362_default_preview_3a.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_default_preview_3a_bear.so:system/vendor/lib/libchromatix_imx362_default_preview_3a_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_default_video.so:system/vendor/lib/libchromatix_imx362_default_video.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_default_video_3a.so:system/vendor/lib/libchromatix_imx362_default_video_3a.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_default_video_3a_bear.so:system/vendor/lib/libchromatix_imx362_default_video_3a_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_default_video_bear.so:system/vendor/lib/libchromatix_imx362_default_video_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_fullsize_preview_3a.so:system/vendor/lib/libchromatix_imx362_fullsize_preview_3a.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_fullsize_preview_3a_bear.so:system/vendor/lib/libchromatix_imx362_fullsize_preview_3a_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_fullsize_video_3a.so:system/vendor/lib/libchromatix_imx362_fullsize_video_3a.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_fullsize_video_3a_bear.so:system/vendor/lib/libchromatix_imx362_fullsize_video_3a_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_hdr_snapshot_3a.so:system/vendor/lib/libchromatix_imx362_hdr_snapshot_3a.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_hdr_snapshot_3a_bear.so:system/vendor/lib/libchromatix_imx362_hdr_snapshot_3a_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_hdr_video_3a.so:system/vendor/lib/libchromatix_imx362_hdr_video_3a.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_hdr_video_3a_bear.so:system/vendor/lib/libchromatix_imx362_hdr_video_3a_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_hfr_120.so:system/vendor/lib/libchromatix_imx362_hfr_120.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_hfr_120_3a.so:system/vendor/lib/libchromatix_imx362_hfr_120_3a.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_hfr_120_3a_bear.so:system/vendor/lib/libchromatix_imx362_hfr_120_3a_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_hfr_120_bear.so:system/vendor/lib/libchromatix_imx362_hfr_120_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_hfr_240.so:system/vendor/lib/libchromatix_imx362_hfr_240.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_hfr_240_3a.so:system/vendor/lib/libchromatix_imx362_hfr_240_3a.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_hfr_240_3a_bear.so:system/vendor/lib/libchromatix_imx362_hfr_240_3a_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_hfr_240_bear.so:system/vendor/lib/libchromatix_imx362_hfr_240_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_hfr_60.so:system/vendor/lib/libchromatix_imx362_hfr_60.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_hfr_60_3a.so:system/vendor/lib/libchromatix_imx362_hfr_60_3a.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_hfr_60_3a_bear.so:system/vendor/lib/libchromatix_imx362_hfr_60_3a_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_hfr_60_bear.so:system/vendor/lib/libchromatix_imx362_hfr_60_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_postproc.so:system/vendor/lib/libchromatix_imx362_postproc.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_postproc_bear.so:system/vendor/lib/libchromatix_imx362_postproc_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_preview.so:system/vendor/lib/libchromatix_imx362_preview.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_preview_bear.so:system/vendor/lib/libchromatix_imx362_preview_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_snapshot.so:system/vendor/lib/libchromatix_imx362_snapshot.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_snapshot_bear.so:system/vendor/lib/libchromatix_imx362_snapshot_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_snapshot_hdr.so:system/vendor/lib/libchromatix_imx362_snapshot_hdr.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_snapshot_hdr_bear.so:system/vendor/lib/libchromatix_imx362_snapshot_hdr_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_video_4k.so:system/vendor/lib/libchromatix_imx362_video_4k.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_video_4k_bear.so:system/vendor/lib/libchromatix_imx362_video_4k_bear.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_video_hdr.so:system/vendor/lib/libchromatix_imx362_video_hdr.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_imx362_video_hdr_bear.so:system/vendor/lib/libchromatix_imx362_video_hdr_bear.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_s5k2l7_4k_preview_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_4k_preview_ak7371.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_s5k2l7_4k_video_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_4k_video_ak7371.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libchromatix_s5k2l7_8953_4k_preview_ak7371.so:system/vendor/lib/libchromatix_s5k2l7_8953_4k_preview_ak7371.so \
@@ -605,7 +550,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_atmel_at24c32e_eeprom.so:system/vendor/lib/libmmcamera_atmel_at24c32e_eeprom.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_cac3_lib.so:system/vendor/lib/libmmcamera_cac3_lib.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_chromaflash_lib.so:system/vendor/lib/libmmcamera_chromaflash_lib.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_csidtg.so:system/vendor/lib/libmmcamera_csidtg.so \
@@ -623,7 +567,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_imx298.so:system/vendor/lib/libmmcamera_imx298.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_imx298_ofilm.so:system/vendor/lib/libmmcamera_imx298_ofilm.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_imx298_sunny.so:system/vendor/lib/libmmcamera_imx298_sunny.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_imx362.so:system/vendor/lib/libmmcamera_imx362.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_interface.so:system/vendor/lib/libmmcamera_interface.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_isp_abf40.so:system/vendor/lib/libmmcamera_isp_abf40.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_isp_bcc40.so:system/vendor/lib/libmmcamera_isp_bcc40.so \
@@ -666,25 +609,20 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_ofilm_s5k4h8_eeprom.so:system/vendor/lib/libmmcamera_ofilm_s5k4h8_eeprom.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so:system/vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so:system/vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_onsemi_cat24c32_imx362_eeprom.so:system/vendor/lib/libmmcamera_onsemi_cat24c32_imx362_eeprom.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_optizoom_lib.so:system/vendor/lib/libmmcamera_optizoom_lib.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_paaf_lib.so:system/vendor/lib/libmmcamera_paaf_lib.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_ppbase_module.so:system/vendor/lib/libmmcamera_ppbase_module.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_qtech_f3l8yam_eeprom.so:system/vendor/lib/libmmcamera_qtech_f3l8yam_eeprom.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_quadracfa.so:system/vendor/lib/libmmcamera_quadracfa.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_rohm_brcg064gwz_3_eeprom.so:system/vendor/lib/libmmcamera_rohm_brcg064gwz_3_eeprom.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_s5k2l7.so:system/vendor/lib/libmmcamera_s5k2l7.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_s5k4h8_OFF0380.so:system/vendor/lib/libmmcamera_s5k4h8_OFF0380.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_sony_imx298_ofilm_eeprom.so:system/vendor/lib/libmmcamera_sony_imx298_ofilm_eeprom.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_sony_imx298_sunny_eeprom.so:system/vendor/lib/libmmcamera_sony_imx298_sunny_eeprom.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_sonyimx135_eeprom.so:system/vendor/lib/libmmcamera_sonyimx135_eeprom.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_stillmore_lib.so:system/vendor/lib/libmmcamera_stillmore_lib.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_sunny_8865_eeprom.so:system/vendor/lib/libmmcamera_sunny_8865_eeprom.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_sunny_gt24c64_imx298_eeprom.so:system/vendor/lib/libmmcamera_sunny_gt24c64_imx298_eeprom.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_sunny_gt24c64_s5k2l7_eeprom.so:system/vendor/lib/libmmcamera_sunny_gt24c64_s5k2l7_eeprom.so \
-    vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_sunny_gt24c64a_imx362_eeprom.so:system/vendor/lib/libmmcamera_sunny_gt24c64a_imx362_eeprom.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so:system/vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so:system/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/libmmcamera_sw2d_lib.so:system/vendor/lib/libmmcamera_sw2d_lib.so \
@@ -793,6 +731,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/lib/vendor.qti.hardware.qteeconnector@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.qteeconnector@1.0_vendor.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/vendor.qti.hardware.radio.am@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.am@1.0_vendor.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.ims@1.0_vendor.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/vendor.qti.hardware.radio.lpa@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.lpa@1.0_vendor.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0_vendor.so \
@@ -802,6 +741,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/lib/vendor.qti.hardware.tui_comm@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.tui_comm@1.0_vendor.so \
     vendor/bq/bardockpro/proprietary/vendor/lib/vendor.qti.voiceprint@1.0.so:system/vendor/lib/vendor.qti.voiceprint@1.0.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0_vendor.so:system/vendor/lib64/com.qualcomm.qti.dpm.api@1.0_vendor.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so:system/vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:system/vendor/lib64/egl/libGLESv1_CM_adreno.so \
@@ -817,6 +757,9 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/hw/vulkan.msm8953.so:system/vendor/lib64/hw/vulkan.msm8953.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib64/lib-imscmservice.so:system/vendor/lib64/lib-imscmservice.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib64/lib-imsxml.so:system/vendor/lib64/lib-imsxml.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib64/lib-uceservice.so:system/vendor/lib64/lib-uceservice.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libAlacSwDec.so:system/vendor/lib64/libAlacSwDec.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libApeSwDec.so:system/vendor/lib64/libApeSwDec.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
@@ -998,6 +941,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/bardockpro/proprietary/vendor/lib64/vendor.qti.hardware.qteeconnector@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.qteeconnector@1.0_vendor.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/vendor.qti.hardware.radio.am@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.am@1.0_vendor.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so \
+    vendor/bq/bardockpro/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.ims@1.0_vendor.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/vendor.qti.hardware.radio.lpa@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.lpa@1.0_vendor.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so \
     vendor/bq/bardockpro/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0_vendor.so \
@@ -1028,6 +972,7 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     datastatusnotification \
     embms \
+    ims \
     CNEService \
     com.qualcomm.location \
     qcrilmsgtunnel \
